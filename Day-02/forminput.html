@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="signup.html" method="get">
+        <div>
+            <label for="Username">User Name</label>
+            <input name="Username" id="Username" required>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input name="Password" id="Password" required>
+        </div>
+        <div>
+            <label for="yearofbirth">Year of birth</label>
+            <input type="number" name="yearofbirth" id="yearofbirth" maxlength="4" min="1900">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="date" name="dateofbirth" id="dateofbirth" min="1900-01-01">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="about">About</label>
+            <textarea name="about" id="about"></textarea>
+        </div>
+        <div>
+            <label for="sms">Sms Alert</label>
+            <input type="checkbox" id="sms" name="sms">
+        </div>
+        <div>
+            <select name="state" id="state">
+                <option value="tamilnadu">Tamil nadu</option>
+                <option value="">Andra</option>
+                <option value="">Hydrabad</option>
+                <option value="">karnataka</option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Upload Resume</label>
+            <input type="file" id="file">
+        </div>
+        
+        <button type="submit">Sign Up</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>
